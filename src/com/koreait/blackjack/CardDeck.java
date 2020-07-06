@@ -16,11 +16,12 @@ public class CardDeck {
 	private void init() {
 		for (int i = 0; i < Card.PATTERNS.length; i++) {
 			for (int z = 1; z <= 13; z++) {
-				arr.add(new Card(Card.PATTERNS[i],getDeno(z)));
-//				String pattern = Card.PATTERNS[i];
-//				String deno = getDeno(z);
-//				Card c = new Card(pattern, deno);
-//				arr.add(c);
+				//arr.add(new Card(Card.PATTERNS[i],getDeno(z)));
+				String pattern = Card.PATTERNS[i];
+				String deno = getDeno(z);
+				int point = getPo(z);
+				Card c = new Card(pattern, deno, point);
+				arr.add(c);
 			}
 		}
 	}
@@ -35,6 +36,16 @@ public class CardDeck {
 		
 	}
 	
+	private int getPo(int num) {
+		switch (num) {
+		case 11: case 12: case 13: return 10;
+		default: return num;
+		}
+	}
+	
+	//return num>10 ? 10: num;
+	
+	
 	//랜덤값 뽑아서 리턴. 카드덱에서 삭제
 	public Card getCard() {
 		int a = (int)(Math.random()*arr.size()); // 인덱스로 랜덤값 받기
@@ -42,6 +53,8 @@ public class CardDeck {
 		arr.remove(a);
 		return temp;
 		
+		// int a = (int)(Math.random()*arr.size());
+		// return arr.remove(a)
 		
 	}
 	
