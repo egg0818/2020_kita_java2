@@ -2,6 +2,7 @@ package com.koreait.blackjack;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Gamer {
 	
@@ -41,6 +42,30 @@ public class Gamer {
 		
 			System.out.printf("점수:%d\n", getTotalPoint());
 		}
+	
+	
+	public void moreCards(CardDeck cd) {
+		Scanner scan = new Scanner(System.in);
+		
+		String answer;
+		
+		System.out.println();
+		
+		while(true) {
+			System.out.println("카드를 더 받으시겠습니까? (y/n)");
+			answer = scan.nextLine();
+			
+			if(answer.contentEquals("n")) {
+				break;
+			} else {
+				receiveCard(cd.getCard());
+			}
+		} 
+		
+		openCards();
+		
+		}
+	}
 		
 	
-}
+

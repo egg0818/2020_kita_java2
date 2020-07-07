@@ -25,6 +25,7 @@ public class CardDeck {
 			}
 		}
 	}
+	
 	private String getDeno(int num) {
 		switch (num) {
 		case 1: return "A";
