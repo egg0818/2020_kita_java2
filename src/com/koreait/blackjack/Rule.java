@@ -10,20 +10,20 @@ public class Rule {
 		
 		if (GP<=21) {
 			if (GP>DP) {
-				System.out.println("WIN");
+			 	System.out.println("WIN");
 			} else if (DP>21) {
-				System.out.println("WIN");
+			 	System.out.println("WIN");
 			} else if (DP>GP && DP<=21) {
-				System.out.println("LOSE");
+			 	System.out.println("LOSE");
 			}
 			else if (GP==DP) {
-				System.out.println("DRAW");
+			 	System.out.println("DRAW");
 			}
 		}else {
-			if(DP >21) {
-				System.out.println("DRAW");
+			if(DP>21) {
+			 	System.out.println("DRAW");
 			}else {
-				System.out.println("LOSE");
+			 	System.out.println("LOSE");
 			}
 		}
 			

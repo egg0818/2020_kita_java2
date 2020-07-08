@@ -19,6 +19,7 @@ public class Game {
 		gamer.moreCards(cd);
 		dealer.openCards();
 		
+		
 
 		Rule.whoIsWin(gamer, dealer);
 		//비겼는지 누가이겼는지 결과가 나타남
