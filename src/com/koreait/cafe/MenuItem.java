@@ -1,7 +1,7 @@
 // 클래스명은 항상 대문자로. 그래야 첫글자가 대문자인 애들은 레퍼런스 변수라는 명제가 안깨짐. 
 // 클래스는 붕어빵틀, 객체화는 붕어빵
 // 클래스의 구성 - 멤버필드(속성, 값저장용), 메소드.
-// 멤버필드의 은닉화(private) - 
+// 멤버필드의 은닉화(private) - 보안상 이유
 // 메소드는 대문자로 시작하면 안됨
 
 
@@ -17,8 +17,6 @@ public class MenuItem {
 		this.price = price;
 	}
 	
-	
-	
 	public String getName() {
 		return name;
 	}
@@ -27,7 +25,7 @@ public class MenuItem {
 		return price;
 	}
 
-	
+
 	// println 메소드를 활용한것. 
 	@Override				
 	public String toString() { // println의 마지막 종착역, 오브젝트로부터 상속받은 메소드
