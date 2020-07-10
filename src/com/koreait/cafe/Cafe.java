@@ -18,7 +18,7 @@ public class Cafe {
 	//	MenuItem mi = cus.order(menu);
 	//	System.out.println(mi);
 		
-//		MenuItem mi = menu.choose(0);
+//		MenuItem mi = menu.choose(0);                                        
 //		System.out.println(mi);
 //		 아메리카노 1,500원 객체가 넘어와야함
 		
