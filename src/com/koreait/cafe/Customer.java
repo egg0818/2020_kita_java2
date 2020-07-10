@@ -3,9 +3,11 @@ package com.koreait.cafe;
 import java.util.Scanner;
 
 public class Customer {
-	Scanner scan = new Scanner(System.in);
 
+	Scanner scan = new Scanner(System.in);
+	
 	public MenuItem order(Menu menu) {
+		
 
 		menu.showMenus();
 
@@ -17,13 +19,18 @@ public class Customer {
 				int intmenuNO = Integer.parseInt(menuNO);
 				return menu.choose(intmenuNO-1);
 			} catch (NumberFormatException e) {
-				System.out.println("숫자를 입력해주세요");
+				System.out.println("숫자를 입력해주"
+						+ "세요");
 			} catch (Exception e) {
 				System.out.println("메뉴를 잘못 입력하셨습니다.");
 			}
 
 		}
 
+	}
+	
+	public void drinkCoffee(Coffee coffee) {
+		System.out.printf("%s 를(을) 마셨습니다.", coffee.getName());
 	}
 
 

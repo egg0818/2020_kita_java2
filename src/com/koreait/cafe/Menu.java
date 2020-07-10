@@ -27,8 +27,10 @@ public class Menu {
 	}
 	
 	public MenuItem choose (int idx) {
-		
+
+		System.out.println(menus.get(idx));
 		return menus.get(idx);
+		
 		
 	}
 

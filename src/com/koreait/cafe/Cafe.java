@@ -10,8 +10,8 @@ public class Cafe {
 		
 		
 		Customer cus = new Customer();
-		Menu menu = new Menu();
 		Barista bas = new Barista();
+		Menu menu = new Menu();
 	
 //		menu.showMenus();
 		
@@ -26,6 +26,7 @@ public class Cafe {
 		
 		MenuItem choiceMenu = cus.order(menu);
 		Coffee coffee = bas.makeCoffee(choiceMenu);
+		cus.drinkCoffee(coffee);
 	
 		
 	}
